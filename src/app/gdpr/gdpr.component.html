@@ -1,0 +1,5 @@
+@for (alert of alerts; track $index) {
+    <ngb-alert [type]="alert.type" (close)="close(alert)">
+        <p>{{ alert.message }}</p>
+    </ngb-alert>
+}

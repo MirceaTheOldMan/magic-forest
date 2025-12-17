@@ -1,0 +1,318 @@
+<section class="container">
+  <div class="row">
+    <a class="col pb-5 mb-4" name="prices"></a>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h2 class="mb-4">Prețuri</h2>
+      <p>
+        Spațiul se poate rezerva, per etaj, pentru evenimente private de până la
+        80 de persoane. Nu ezitați să
+        <a class="font-weight-bold" routerLink="/" fragment="contact">
+          ne contactați</a
+        >
+        pentru detalii.
+      </p>
+    </div>
+  </div>
+  @if (false) {
+  <div class="row">
+    <div class="col">
+      <h5>Evenimente Private</h5>
+      <p>
+        Sumele afișate reprezintă sumele minime care trebuie achitate pentru
+        închirierea spațiului.
+      </p>
+    </div>
+    <div class="col-12 col-sm-auto align-self-center text-right pb-4 pb-sm-0">
+      <button
+        class="btn btn-success text-white"
+        routerLink="/party-list"
+        fragment="packs"
+      >
+        Detalii
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <h5 class="card-header bg-warning">Închiriere 1</h5>
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="card-subtitle mb-1 text-muted">Preț</h6>
+            </div>
+            <div class="col-auto pr-0">
+              <h6 class="card-subtitle mb-1 text-muted">Luni - Joi</h6>
+            </div>
+            <div class="col-auto">
+              <h5 class="card-title mb-2">{{ prices[0].week }} lei</h5>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="card-subtitle mb-1"></h6>
+            </div>
+            <div class="col-auto pr-0">
+              <h6 class="card-subtitle mb-1 text-muted">Vineri - Duminică</h6>
+            </div>
+            <div class="col-auto">
+              <h5 class="card-title mb-2">{{ prices[0].weekend }} lei</h5>
+            </div>
+          </div>
+          <ul class="card-text list-unstyled border-top border-light pt-3 mt-1">
+            <li>
+              - @if (prices[0].isMax) {<span>maxim</span>}
+              {{ prices[0].copii }} copii / {{ prices[0].adulti }} adulți
+            </li>
+            <li>- Pentru fiecare copil în plus se achită 75 lei.</li>
+            <li>- Pentru fiecare adult în plus se achită 20 lei.</li>
+          </ul>
+        </div>
+        <div class="card-footer bg-transparent border-white pb-4">
+          <button
+            class="btn btn-outline-secondary float-end"
+            routerLink="/party-list"
+            fragment="rent1"
+          >
+            Detalii
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <h5 class="card-header bg-primary text-white">Închiriere 2</h5>
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="card-subtitle mb-1 text-muted">Preț</h6>
+            </div>
+            <div class="col-auto pr-0">
+              <h6 class="card-subtitle mb-1 text-muted">Luni - Joi</h6>
+            </div>
+            <div class="col-auto">
+              <h5 class="card-title mb-2">{{ prices[1].week }} lei</h5>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="card-subtitle mb-1"></h6>
+            </div>
+            <div class="col-auto pr-0">
+              <h6 class="card-subtitle mb-1 text-muted">Vineri - Duminică</h6>
+            </div>
+            <div class="col-auto">
+              <h5 class="card-title mb-2">{{ prices[1].weekend }} lei</h5>
+            </div>
+          </div>
+          <ul class="card-text list-unstyled border-top border-light pt-3 mt-1">
+            <li>
+              - @if (prices[1].isMax) {<span>maxim</span>}
+              {{ prices[1].copii }} copii / {{ prices[1].adulti }} adulți
+            </li>
+            <li>- Pentru fiecare copil în plus se achită 100 lei.</li>
+            <li>- Pentru fiecare adult în plus se achită 20 lei.</li>
+          </ul>
+        </div>
+        <div class="card-footer bg-transparent border-white pb-4">
+          <button
+            class="btn btn-outline-secondary float-end"
+            routerLink="/party-list"
+            fragment="rent2"
+          >
+            Detalii
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <h5 class="card-header bg-success text-white">Închiriere 3</h5>
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="card-subtitle mb-1 text-muted">Preț</h6>
+            </div>
+            <div class="col-auto pr-0">
+              <h6 class="card-subtitle mb-1 text-muted">Luni - Joi</h6>
+            </div>
+            <div class="col-auto">
+              <h5 class="card-title mb-2">{{ prices[2].week }} lei</h5>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="card-subtitle mb-1"></h6>
+            </div>
+            <div class="col-auto pr-0">
+              <h6 class="card-subtitle mb-1 text-muted">Vineri - Duminică</h6>
+            </div>
+            <div class="col-auto">
+              <h5 class="card-title mb-2">{{ prices[2].weekend }} lei</h5>
+            </div>
+          </div>
+          <ul class="card-text list-unstyled border-top border-light pt-3 mt-1">
+            <li>
+              - @if (prices[2].isMax) {<span>maxim</span>}
+              {{ prices[2].copii }} copii / {{ prices[2].adulti }} adulți
+            </li>
+            <li>- Pentru fiecare copil în plus se achită 75 lei.</li>
+            <li>- Pentru fiecare adult în plus se achită 20 lei.</li>
+          </ul>
+        </div>
+        <div class="card-footer bg-transparent border-white pb-4">
+          <button
+            class="btn btn-outline-secondary float-end"
+            routerLink="/party-list"
+            fragment="rent3"
+          >
+            Detalii
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <h5 class="card-header bg-primary text-white">Închiriere 4</h5>
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="card-subtitle mb-1 text-muted">Preț</h6>
+            </div>
+            <div class="col-auto pr-0">
+              <h6 class="card-subtitle mb-1 text-muted">Luni - Joi</h6>
+            </div>
+            <div class="col-auto">
+              <h5 class="card-title mb-2">{{ prices[3].week }} lei</h5>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="card-subtitle mb-1"></h6>
+            </div>
+            <div class="col-auto pr-0">
+              <h6 class="card-subtitle mb-1 text-muted">Vineri - Duminică</h6>
+            </div>
+            <div class="col-auto">
+              <h5 class="card-title mb-2">{{ prices[3].weekend }} lei</h5>
+            </div>
+          </div>
+          <ul class="card-text list-unstyled border-top border-light pt-3 mt-1">
+            <li>
+              - @if (prices[3].isMax) {<span>maxim</span>}
+              {{ prices[3].copii }} copii / {{ prices[3].adulti }} adulți
+            </li>
+            <li>- Pentru fiecare copil în plus se achită 100 lei.</li>
+            <li>- Pentru fiecare adult în plus se achită 20 lei.</li>
+          </ul>
+        </div>
+        <div class="card-footer bg-transparent border-white pb-4">
+          <button
+            class="btn btn-outline-secondary float-end"
+            routerLink="/party-list"
+            fragment="rent4"
+          >
+            Detalii
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <h5 class="card-header bg-warning">Închiriere 5</h5>
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="card-subtitle mb-1 text-muted">Preț</h6>
+            </div>
+            <div class="col-auto pr-0">
+              <h6 class="card-subtitle mb-1 text-muted">Luni - Joi</h6>
+            </div>
+            <div class="col-auto">
+              <h5 class="card-title mb-2">{{ prices[4].week }} lei</h5>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="card-subtitle mb-1"></h6>
+            </div>
+            <div class="col-auto pr-0">
+              <h6 class="card-subtitle mb-1 text-muted">Vineri - Duminică</h6>
+            </div>
+            <div class="col-auto">
+              <h5 class="card-title mb-2">{{ prices[4].weekend }} lei</h5>
+            </div>
+          </div>
+          <ul class="card-text list-unstyled border-top border-light pt-3 mt-1">
+            <li>
+              - @if (prices[4].isMax) {<span>maxim</span>}
+              {{ prices[4].copii }} copii / {{ prices[4].adulti }} adulți
+            </li>
+            <li>- Pentru fiecare copil în plus se achită 100 lei.</li>
+            <li>- Pentru fiecare adult în plus se achită 20 lei.</li>
+          </ul>
+        </div>
+        <div class="card-footer bg-transparent border-white pb-4">
+          <button
+            class="btn btn-outline-secondary float-end"
+            routerLink="/party-list"
+            fragment="rent5"
+          >
+            Detalii
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <h5 class="card-header text-white bg-danger">
+          Închiriere XXL (durată extinsă 4 ORE)
+        </h5>
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="card-subtitle mb-1 text-muted">Preț</h6>
+            </div>
+            <div class="col-auto pr-0">
+              <h6 class="card-subtitle mb-1 text-muted">Luni - Joi</h6>
+            </div>
+            <div class="col-auto">
+              <h5 class="card-title mb-2">{{ prices[5].week }} lei</h5>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="card-subtitle mb-1"></h6>
+            </div>
+            <div class="col-auto pr-0">
+              <h6 class="card-subtitle mb-1 text-muted">Vineri - Duminică</h6>
+            </div>
+            <div class="col-auto">
+              <h5 class="card-title mb-2">{{ prices[5].weekend }} lei</h5>
+            </div>
+          </div>
+          <ul class="card-text list-unstyled border-top border-light pt-3 mt-1">
+            <li>
+              - @if (prices[5].isMax) {<span>maxim</span>}
+              {{ prices[5].copii }} copii / {{ prices[5].adulti }} adulți
+            </li>
+            <li>- Pentru fiecare copil în plus se achită 100 lei.</li>
+            <li>- Pentru fiecare adult în plus se achită 20 lei.</li>
+          </ul>
+        </div>
+        <div class="card-footer bg-transparent border-white pb-4">
+          <button
+            class="btn btn-outline-secondary float-end"
+            routerLink="/party-list"
+            fragment="rent6"
+          >
+            Detalii
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  }
+</section>

@@ -1,0 +1,675 @@
+<div class="container">
+  <div class="row">
+    <a class="col pb-5 mb-4" name="packs"></a>
+  </div>
+  <div class="row">
+    <div class="col mb-3">
+      <h1 class="mb-0">Pachete și Servicii</h1>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col">
+      <h3>Informații utile</h3>
+      <ul>
+        <li>
+          Pentru confirmarea rezervării și blocarea datei evenimentului privat
+          se va achita, numerar, o
+          <strong>taxă de rezervare</strong> de <strong>300 lei</strong>, sumă
+          care <strong>nu se rambursează</strong>. Data se poate
+          <strong>bloca maxim 3 zile</strong> pentru achitarea taxei de
+          rezervare. Prin rezervarea fermă, beneficiarul se obligă să respecte
+          regulamentul intern pe toată durata desfășurării evenimentului.
+          <strong
+            >Data nu se consideră rezervată fără achitarea taxei de
+            rezervare.</strong
+          >
+        </li>
+        <li>
+          Regulamentul complet este disponibil
+          <a routerLink="/rules" routerLinkActive="active">aici</a>.
+        </li>
+        <li>
+          Copiii care nu participă la activități și stau împreună cu părinții (0
+          ani), nu vor fi luați în considerare la calculul final al sumei de
+          plată, dar se vor considera la totalul numărului de persoane, ce nu
+          poate depăși numărul de 80, conform legislației în vigoare.
+        </li>
+        <li>
+          Durata unei închirieri este de 3 ore sau 4 ore pentru inchirierea XXL.
+          Intrarea în locație se face cu 15 minute înaintea orei de început.
+          Eliberarea sălii se face în maxim 15 minute după scurgerea perioadei
+          alocate. (Pentru a oferi aceleași condiții de igienă și amenajare a
+          sălii fiecărui client, avem nevoie să respectați acest interval de
+          plecare). Venirea si plecarea in afara acestui interval se taxeaza la
+          tarif de ora suplimentara.
+        </li>
+        <li>
+          Beneficiarul este responsabil de eventualele distrugeri provocate de
+          către invitații proprii la evenimentul din incinta locației.
+          Elementele distruse de către adulții sau copiii prezenți la eveniment
+          se vor achita de către beneficiar la finalul evenimentului. Se va
+          suporta un cuantum de 75% din valoarea de achiziție a elementului
+          distrus.
+        </li>
+        <li>
+          Accesul în TOT locul de joacă se face DOAR în șosete. Cine nu are
+          șosete, poate achiziționa din interior.
+        </li>
+        <li>
+          In incinta locatiei nu pot fi folosite artificii, tunuri de confetti,
+          orice alte elemente cu flacara sau care produc mizerie.
+        </li>
+        <li>
+          Este INTERZIS consumul de băuturi alcoolice, aducerea de băuturi și
+          alimente preparate în casă, fără data de valabilitate și certificate
+          de conformitate.
+        </li>
+        <li>
+          Prin închirierea locației, clientul se obligă să respecte toate
+          măsurile necesare pentru prevenirea răspândirii SARS-CoV-2 și a
+          tuturor măsurilor în vigoare la data dasfășurării evenimentului.
+        </li>
+        <li>
+          Posibilități de plată: CASH sau CARD. Se poate emite factură, la
+          cerere, în decurs de 3-5 zile lucrătoare (se trimite ulterior prin
+          email sau WhatsApp).
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+@if (false) {
+<div class="bg-gradient-light py-5">
+  <div class="container">
+    <p><b>Ofertă valabilă în intervalul 01.01.2025 - 31.12.2025</b></p>
+    <a class="d-block pb-5 mb-4" name="rent1"></a>
+    <div class="card">
+      <div class="card-header bg-warning"><b>Închiriere 1</b></div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12 col-lg-auto order-lg-2">
+            <h5 class="card-subtitle mb-1 text-muted">Prețuri</h5>
+            <div class="row align-items-center mb-3">
+              <div class="col pr-0">
+                <h6 class="card-subtitle mb-3 text-muted">Luni - Joi</h6>
+                <h6 class="card-subtitle text-muted">Vineri - Duminică</h6>
+              </div>
+              <div class="col-auto">
+                <h5 class="card-title mb-2">{{ prices[0].week }} lei</h5>
+                <h5 class="card-title">{{ prices[0].weekend }} lei</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg order-lg-1">
+            <ul class="pl-4">
+              <li>
+                Tarifele de weekend se aplica si în cazul sărbătorilor legale,
+                zile libere legale, 14 februarie, 1 martie, 8 martie, 1 Iunie,
+                Rusalii, etc...
+              </li>
+              <li>
+                Număr persoane -
+                <b
+                  >{{ prices[0].copii }} copii si
+                  {{ prices[0].adulti }} adulți</b
+                >
+                <a routerLink="/party-list" fragment="explicatie"
+                  ><sup>(1)</sup></a
+                >
+              </li>
+              <li>Pentru fiecare adult în plus se achită <b>20 lei</b></li>
+              <li>Pentru fiecare copil în plus se achită <b>75 lei</b></li>
+              <li>Durată închiriere spațiu pentru eveniment private - 3 ore</li>
+              <li>Exclusivitatea spațiului (tot etajul 2 sau etajul 3)</li>
+              <li>
+                Sală igienizată, dezinfectată și aranjată conform normelor în
+                vigoare
+              </li>
+              <li>Animație, făcută de animator specializat</li>
+              <li>
+                Apă La Fântâna pentru copii/adulți. (dozator cu autoservire)
+              </li>
+              <li>Veselă frumos colorată, pentru copii</li>
+              <li>
+                Farfurii, pahare, șervețele, tacâmuri, boluri, frapieră pentru
+                adulți
+              </li>
+              <li>Cafea, ceai</li>
+              <li>Ronțănele</li>
+              <li>Decor sală petrecere cu baloane, pompoane, etc...</li>
+              <li>Cifra vârstei</li>
+              <li>Nume sărbătorit scris pe panou</li>
+              <li>Lumânare tort - cifra vârstei</li>
+              <li>
+                Invitații virtuale personalizate din modelele disponibile
+                <a routerLink="/party-list" fragment="explicatie"
+                  ><sup>(2)</sup></a
+                >
+              </li>
+              <li>Mașina de baloane 15 minute</li>
+              <li>Face Painting</li>
+              <li>Modelare baloane / baloane cu personaje</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="d-block pb-5 mb-4" name="rent2"></a>
+    <div class="card">
+      <div class="card-header bg-primary text-white"><b>Închiriere 2</b></div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12 col-lg-auto order-lg-2">
+            <h5 class="card-subtitle mb-1 text-muted">Prețuri</h5>
+            <div class="row align-items-center mb-3">
+              <div class="col pr-0">
+                <h6 class="card-subtitle mb-3 text-muted">Luni - Joi</h6>
+                <h6 class="card-subtitle text-muted">Vineri - Duminică</h6>
+              </div>
+              <div class="col-auto">
+                <h5 class="card-title mb-2">{{ prices[1].week }} lei</h5>
+                <h5 class="card-title">{{ prices[1].weekend }} lei</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg order-lg-1">
+            <ul class="pl-4">
+              <li>
+                Tarifele de weekend se aplica si în cazul sărbătorilor legale,
+                zile libere legale, 14 februarie, 1 martie, 8 martie, 1 Iunie,
+                Rusalii, etc...
+              </li>
+              <li>
+                Număr persoane -
+                <b
+                  >{{ prices[1].copii }} copii si
+                  {{ prices[1].adulti }} adulți</b
+                >
+                <a routerLink="/party-list" fragment="explicatie"
+                  ><sup>(1)</sup></a
+                >
+              </li>
+              <li>Pentru fiecare adult în plus se achită <b>20 lei</b></li>
+              <li>Pentru fiecare copil în plus se achită <b>100 lei</b></li>
+              <li>Durată închiriere spațiu pentru eveniment private - 3 ore</li>
+              <li>Exclusivitatea spațiului (tot etajul 2 sau etajul 3)</li>
+              <li>
+                Sală igienizată, dezinfectată și aranjată conform normelor în
+                vigoare
+              </li>
+              <li>Animație, făcută de animator specializat</li>
+              <li>
+                Apă La Fântâna pentru copii/adulți. (dozator cu autoservire)
+              </li>
+              <li>Veselă frumos colorată, pentru copii</li>
+              <li>
+                Farfurii, pahare, șervețele, tacâmuri, boluri, frapieră pentru
+                adulți
+              </li>
+              <li>Cafea, ceai</li>
+              <li>Ronțănele</li>
+              <li>Decor sală petrecere cu baloane, pompoane, etc...</li>
+              <li>Cifra vârstei</li>
+              <li>Nume sărbătorit scris pe panou</li>
+              <li>Lumânare tort - cifra vârstei</li>
+              <li>
+                Invitații virtuale personalizate din modelele disponibile
+                <a routerLink="/party-list" fragment="explicatie"
+                  ><sup>(2)</sup></a
+                >
+              </li>
+              <li>Mașina de baloane 15 minute</li>
+              <li>Face Painting</li>
+              <li>Modelare baloane / baloane cu personaje</li>
+              <li>
+                Pizza pentru copii - 4 pizza medii
+                <a routerLink="/party-list" fragment="explicatie"
+                  ><sup>(3)</sup></a
+                >(se achita direct la livrator - 140 lei)
+              </li>
+              <li>O șampanie pentru copii</li>
+              <li>Suc necarbogazos pentru copii - 4 litri</li>
+              <li>
+                Suc pentru adulți: 4l Coca Cola / Pepsi, 2l Fanta / Mirinda,
+                1.5l suc necarbogazos, 1.5l apă minerală.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="d-block pb-5 mb-4" name="rent3"></a>
+    <div class="card">
+      <div class="card-header bg-success text-white"><b>Închiriere 3</b></div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12 col-lg-auto order-lg-2">
+            <h5 class="card-subtitle mb-1 text-muted">Prețuri</h5>
+            <div class="row align-items-center mb-3">
+              <div class="col pr-0">
+                <h6 class="card-subtitle mb-3 text-muted">Luni - Joi</h6>
+                <h6 class="card-subtitle text-muted">Vineri - Duminică</h6>
+              </div>
+              <div class="col-auto">
+                <h5 class="card-title mb-2">{{ prices[2].week }} lei</h5>
+                <h5 class="card-title">{{ prices[2].weekend }} lei</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg order-lg-1">
+            <ul class="pl-4">
+              <li>
+                Tarifele de weekend se aplica si în cazul sărbătorilor legale,
+                zile libere legale, 14 februarie, 1 martie, 8 martie, 1 Iunie,
+                Rusalii, etc...
+              </li>
+              <li>
+                Număr persoane -
+                <b
+                  >{{ prices[2].copii }} copii si
+                  {{ prices[2].adulti }} adulți</b
+                >
+                <a routerLink="/party-list" fragment="explicatie"
+                  ><sup>(1)</sup></a
+                >
+              </li>
+              <li>Pentru fiecare adult în plus se achită <b>20 lei</b></li>
+              <li>Pentru fiecare copil în plus se achită <b>75 lei</b></li>
+              <li>Durată închiriere spațiu pentru eveniment private - 3 ore</li>
+              <li>Exclusivitatea spațiului (tot etajul 2 sau etajul 3)</li>
+              <li>
+                Sală igienizată, dezinfectată și aranjată conform normelor în
+                vigoare
+              </li>
+              <li>Animație, făcută de animator specializat</li>
+              <li>
+                Apă La Fântâna pentru copii/adulți. (dozator cu autoservire)
+              </li>
+              <li>Veselă frumos colorată, pentru copii</li>
+              <li>
+                Farfurii, pahare, șervețele, tacâmuri, boluri, frapieră pentru
+                adulți
+              </li>
+              <li>Cafea, ceai</li>
+              <li>Ronțănele</li>
+              <li>Decor sală petrecere cu baloane, pompoane, etc...</li>
+              <li>Cifra vârstei</li>
+              <li>Nume sărbătorit scris pe panou</li>
+              <li>Lumânare tort - cifra vârstei</li>
+              <li>
+                Invitații virtuale personalizate din modelele disponibile
+                <a routerLink="/party-list" fragment="explicatie"
+                  ><sup>(2)</sup></a
+                >
+              </li>
+              <li>Mașina de baloane 15 minute</li>
+              <li>Face Painting</li>
+              <li>Modelare baloane / baloane cu personaje</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="d-block pb-5 mb-4" name="rent4"></a>
+    <div class="card">
+      <div class="card-header bg-primary text-white"><b>Închiriere 4</b></div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12 col-lg-auto order-lg-2">
+            <h5 class="card-subtitle mb-1 text-muted">Prețuri</h5>
+            <div class="row align-items-center mb-3">
+              <div class="col pr-0">
+                <h6 class="card-subtitle mb-3 text-muted">Luni - Joi</h6>
+                <h6 class="card-subtitle text-muted">Vineri - Duminică</h6>
+              </div>
+              <div class="col-auto">
+                <h5 class="card-title mb-2">{{ prices[3].week }} lei</h5>
+                <h5 class="card-title">{{ prices[3].weekend }} lei</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg order-lg-1">
+            <ul class="pl-4">
+              <li>
+                Tarifele de weekend se aplica si în cazul sărbătorilor legale,
+                zile libere legale, 14 februarie, 1 martie, 8 martie, 1 Iunie,
+                Rusalii, etc...
+              </li>
+              <li>
+                Număr persoane -
+                <b
+                  >{{ prices[3].copii }} copii si
+                  {{ prices[3].adulti }} adulți</b
+                >
+                <a routerLink="/party-list" fragment="explicatie"
+                  ><sup>(1)</sup></a
+                >
+              </li>
+              <li>Pentru fiecare adult în plus se achită <b>20 lei</b></li>
+              <li>Pentru fiecare copil în plus se achită <b>100 lei</b></li>
+              <li>Durată închiriere spațiu pentru eveniment private - 3 ore</li>
+              <li>Exclusivitatea spațiului (tot etajul 2 sau etajul 3)</li>
+              <li>
+                Sală igienizată, dezinfectată și aranjată conform normelor în
+                vigoare
+              </li>
+              <li>Animație, făcută de animator specializat</li>
+              <li>
+                Apă La Fântâna pentru copii/adulți. (dozator cu autoservire)
+              </li>
+              <li>Veselă frumos colorată, pentru copii</li>
+              <li>
+                Farfurii, pahare, șervețele, tacâmuri, boluri, frapieră pentru
+                adulți
+              </li>
+              <li>Cafea, ceai</li>
+              <li>Ronțănele</li>
+              <li>Decor sală petrecere cu baloane, pompoane, etc...</li>
+              <li>Cifra vârstei</li>
+              <li>Nume sărbătorit scris pe panou</li>
+              <li>Lumânare tort - cifra vârstei</li>
+              <li>
+                Invitații virtuale personalizate din modelele disponibile
+                <a routerLink="/party-list" fragment="explicatie"
+                  ><sup>(2)</sup></a
+                >
+              </li>
+              <li>Mașina de baloane 15 minute</li>
+              <li>Face Painting</li>
+              <li>Modelare baloane / baloane cu personaje</li>
+              <li>
+                Pizza pentru copii - 8 bucăți<a
+                  routerLink="/party-list"
+                  fragment="explicatie"
+                  ><sup>(3)</sup></a
+                >(se achită direct la livrator - 260 lei)
+              </li>
+              <li>Șampanie pentru copii - 2 bucăți</li>
+              <li>Suc necarbogazos pentru copii - 8 litri</li>
+              <li>
+                Suc pentru adulți: 6l Coca Cola / Pepsi, 4l Fanta / Mirinda,
+                3-4l suc necarbogazos, 3-4l apă minerală.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="d-block pb-5 mb-4" name="rent5"></a>
+    <div class="card">
+      <div class="card-header bg-warning"><b>Închiriere 5</b></div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12 col-lg-auto order-lg-2">
+            <h5 class="card-subtitle mb-1 text-muted">Prețuri</h5>
+            <div class="row align-items-center mb-3">
+              <div class="col pr-0">
+                <h6 class="card-subtitle mb-3 text-muted">Luni - Joi</h6>
+                <h6 class="card-subtitle text-muted">Vineri - Duminică</h6>
+              </div>
+              <div class="col-auto">
+                <h5 class="card-title mb-2">{{ prices[4].week }} lei</h5>
+                <h5 class="card-title">{{ prices[4].weekend }} lei</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg order-lg-1">
+            <ul class="pl-4">
+              <li>
+                Tarifele de weekend se aplica si în cazul sărbătorilor legale,
+                zile libere legale, 14 februarie, 1 martie, 8 martie, 1 Iunie,
+                Rusalii, etc...
+              </li>
+              <li>
+                Număr persoane -
+                <b
+                  >{{ prices[4].copii }} copii si
+                  {{ prices[4].adulti }} adulți</b
+                >
+                <a routerLink="/party-list" fragment="explicatie"
+                  ><sup>(1)</sup></a
+                >
+              </li>
+              <li>Pentru fiecare adult în plus se achită <b>20 lei</b></li>
+              <li>Pentru fiecare copil în plus se achită <b>100 lei</b></li>
+              <li>Durată închiriere spațiu pentru eveniment private - 3 ore</li>
+              <li>Exclusivitatea spațiului (tot etajul 2 sau etajul 3)</li>
+              <li>
+                Sală igienizată, dezinfectată și aranjată conform normelor în
+                vigoare
+              </li>
+              <li>Animație, făcută de animator specializat</li>
+              <li>
+                Apă La Fântâna pentru copii/adulți. (dozator cu autoservire)
+              </li>
+              <li>Veselă frumos colorată, pentru copii</li>
+              <li>
+                Farfurii, pahare, șervețele, tacâmuri, boluri, frapieră pentru
+                adulți
+              </li>
+              <li>Cafea, ceai</li>
+              <li>Ronțănele</li>
+              <li>Decor sală petrecere cu baloane, pompoane, etc...</li>
+              <li>Cifra vârstei</li>
+              <li>Nume sărbătorit scris pe panou</li>
+              <li>Lumânare tort - cifra vârstei</li>
+              <li>
+                Invitații virtuale personalizate din modelele disponibile
+                <a routerLink="/party-list" fragment="explicatie"
+                  ><sup>(2)</sup></a
+                >
+              </li>
+              <li>Mașina de baloane 15 minute</li>
+              <li>Face Painting</li>
+              <li>Modelare baloane / baloane cu personaje</li>
+              <li>
+                Pizza pentru copii - 10 bucăți
+                <a routerLink="/party-list" fragment="explicatie"
+                  ><sup>(3)</sup></a
+                >
+                (se achită direct la livrator - 320 lei)
+              </li>
+              <li>Șampanie pentru copii - 2 bucăți</li>
+              <li>Suc necarbogazos pentru copii - 10 litri</li>
+              <li>
+                Suc pentru adulți: 8l Coca Cola / Pepsi, 4l Fanta / Mirinda, 6l
+                suc necarbogazos, 6l apă minerală.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="d-block pb-5 mb-4" name="rent6"></a>
+    <div class="card">
+      <div class="card-header bg-danger text-white"><b>Închiriere XXL</b></div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12 col-lg-auto order-lg-2">
+            <h5 class="card-subtitle mb-1 text-muted">Prețuri</h5>
+            <div class="row align-items-center mb-3">
+              <div class="col pr-0">
+                <h6 class="card-subtitle mb-3 text-muted">Luni - Joi</h6>
+                <h6 class="card-subtitle text-muted">Vineri - Duminică</h6>
+              </div>
+              <div class="col-auto">
+                <h5 class="card-title mb-2">{{ prices[5].week }} lei</h5>
+                <h5 class="card-title">{{ prices[5].weekend }} lei</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg order-lg-1">
+            <ul class="pl-4">
+              <li>
+                Tarifele de weekend se aplica si în cazul sărbătorilor legale,
+                zile libere legale, 14 februarie, 1 martie, 8 martie, 1 Iunie,
+                Rusalii, etc...
+              </li>
+              <li>
+                Număr persoane -
+                <b
+                  >{{ prices[5].copii }} copii si
+                  {{ prices[5].adulti }} adulți</b
+                >
+                <a routerLink="/party-list" fragment="explicatie"
+                  ><sup>(1)</sup></a
+                >
+              </li>
+              <li>Pentru fiecare adult în plus se achită <b>20 lei</b></li>
+              <li>Pentru fiecare copil în plus se achită <b>100 lei</b></li>
+              <li>
+                Durată închiriere spațiu pentru eveniment private - <b>4 ore</b>
+              </li>
+              <li>Exclusivitatea spațiului (tot etajul 2 sau etajul 3)</li>
+              <li>
+                Sală igienizată, dezinfectată și aranjată conform normelor în
+                vigoare
+              </li>
+              <li>Animație, făcută de animator specializat</li>
+              <li>
+                Apă La Fântâna pentru copii/adulți. (dozator cu autoservire)
+              </li>
+              <li>Veselă frumos colorată, pentru copii</li>
+              <li>
+                Farfurii, pahare, șervețele, tacâmuri, boluri, frapieră pentru
+                adulți
+              </li>
+              <li>Cafea, ceai</li>
+              <li>Ronțănele</li>
+              <li>Decor sală petrecere cu baloane, pompoane, etc...</li>
+              <li>Cifra vârstei</li>
+              <li>Nume sărbătorit scris pe panou</li>
+              <li>Lumânare tort - cifra vârstei</li>
+              <li>
+                Invitații virtuale personalizate din modelele disponibile
+                <a routerLink="/party-list" fragment="explicatie"
+                  ><sup>(2)</sup></a
+                >
+              </li>
+              <li>Mașina de baloane 15 minute</li>
+              <li>Face Painting</li>
+              <li>Modelare baloane / baloane cu personaje</li>
+              <li>
+                Pizza pentru copii - 10 bucăți
+                <a routerLink="/party-list" fragment="explicatie"
+                  ><sup>(3)</sup></a
+                >
+                (se achită direct la livrator - 320 lei)
+              </li>
+              <li>Șampanie de copii - 3 bucăți</li>
+              <li>Suc necarbogazos pentru copii - 8l</li>
+              <li>
+                Suc pentru adulți: 8l Coca Cola / Pepsi, 4l Fanta / Mirinda,
+                5-6l suc necarbogazos, 4-6l apă minerală.
+              </li>
+              <li>Pinata Unicorn / Dinozaur</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h5 class="my-4" name="explicatie">Explicație:</h5>
+    <ol>
+      <li>
+        Capacitate maximă 35 copii și 45 adulți. Se iau in considerare toti
+        copiii prezenti, intre 1 si 14 ani.
+      </li>
+      <li>
+        Modelele disponibile pentru invitațiile virtuale (se trimit prin
+        WhatsApp) sunt: MICKEY, MINNIE, UNICORN, LADY BUG, MICA SIRENA,
+        CURCUBEU, PISICUTA, PRINTESE, FLORICELE, FLUTURASI, BUFNITA, FULGER
+        MCQUEEN, TRANSFORMERS, PIRAT, NINJAGO, MINECRAFT, HOTWHEELS, FOTBAL,
+        SPATIU, JUNGLA, ANIMALE MARITIME, PATRULA CATELUSILOR, CAMIONUL LEO,
+        URSULET, FROZEN, ROBOTEI, ROBLOX, FIXIKI, BALLERINA, HARRY POTTER,
+        STEVEN UNIVERSE, PRINTESA AURORA, PRINTESA SOFIA, 101 DALMATIENI, OLAF,
+        GIRAFA, SONIC, HULK, CIRESE, LOL, TRENUL THOMAS, STAR WARS, CAPRIOARA,
+        BLUEY si BINGO, SUPER MARIO, DOCTORITA PLUSICA, TINKERBELL, POMPIERUL
+        SAM, SONIC.
+      </li>
+      <li>
+        Pizza copii: PIZZA MARGHERITTA și PIZZA CU SUNCĂ. Pizza inclusă în
+        pachete se comandă doar de la colaboratorul locației. Pizza se achită
+        direct la livrator și se scade la finat din prețul pachetului.
+      </li>
+      <li>
+        Preț pizza conform pachetului: PACHET 2 – 140LEI; PACHET 4 – 260 LEI;
+        PACHET 5 – 320 LEI; PACHET XXL – 320 LEI.
+      </li>
+    </ol>
+  </div>
+</div>
+}
+<div class="container">
+  <div class="row mb-4 mt-5">
+    <div class="col">
+      <h4>Elemente Extra:</h4>
+      <ul>
+        <li>
+          <strong>Prelungire inchiriere</strong> – 400 lei pentru o oră extra
+          (inainte sau dupa cele 3 ore stabilite pentru party). Orele extra
+          trebuie anuntate la semnarea contractului de inchiriere. Taxarea se
+          face în intervale de 15 minute. Aceste tarife se aplică și la
+          depășirea celor 15 minute alocate pentru eliberarea sălii.
+        </li>
+        <li>Animatoare extra, 3 ore – 200 lei</li>
+        <li>Fotograf – 3 ore – 100 Euro.</li>
+        <li>Magician – 600 lei</li>
+        <li>
+          Decor personalizat, conform cu personajele invitației/tortului
+          (pahare, farfurii, șervețele, baloane folie, coifuri, suflatori cu
+          tematica tortului – se anunță cu 2 săptămâni înainte de party) – 150
+          lei
+        </li>
+        <li>Pinata – 250 lei. Include și dulciuri pentru toți copiii.</li>
+        <li>Vânătoare de comori – 250 lei</li>
+        <li>
+          Cutia cu surprize (Punchbox) conține o jucărie per copil – 250 lei
+        </li>
+        <li>Atelier creație extra – 25 lei/copil.</li>
+        <li>Inchiriere decorațiuni și suporți candy-bar: 50 lei.</li>
+        <li>
+          Personajele: Mickey și/sau Minnie Mouse: 150 lei - 1 personaj, 250 lei
+          - 2 personaje, 20-25 de minute.
+        </li>
+        <li>Șampanie copii – 20 lei/bucata</li>
+        <li>Face Painting – 150 lei</li>
+        <li>
+          LASER X - 20 lei/copil - 30 minute (3 ture de joc de cate 10 minute).
+          Doar pentru copii mai mari de 6 ani se pun la dispoziție 10
+          echipamente laser tag pentru copii.
+        </li>
+        <li>Un Extra Sărbătorit - 50 lei</li>
+        <li>
+          Invitație extra - separată pentru al doilea, al treilea sau mai mulți
+          copii - 50 de lei
+        </li>
+        <li>
+          Multiball - 100 lei – o oră, (DISPONIBIL DOAR LA ETAJUL 3).
+          Recomandata copiilor peste 7-8 ani.
+        </li>
+        <li>Ghirlandă baloane personalizate – 250 lei</li>
+        <li>Baloane cu heliu – de la 20 lei/bucata</li>
+        <li>Aranjare sală cu decor adus de client – 100 lei/oră</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col">
+      <h3>Facilități Magic Forest:</h3>
+      <ul>
+        <li>Spațiu generos (300mp per etaj)</li>
+        <li>Masă de billiard, Darts, Foosball și Airhokey</li>
+        <li>Scaune pentru copii mici</li>
+        <li>
+          Zona igienă bebe/copil: măsuță schimbat, pampers, șervetele umede.
+        </li>
+        <li>Uscator de păr, gel dezinfectant.</li>
+        <li>Cuptor cu microunde, frigider, aparat de cafea.</li>
+        <li>Locuri de parcare în curte.</li>
+        <li>Terasă pentru fumători (12mp)</li>
+      </ul>
+    </div>
+  </div>
+</div>

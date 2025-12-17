@@ -1,0 +1,23 @@
+<div class="container mb-5 custom-padding">
+    <div class="row">
+        <a class="col pb-5 mb-4" name="album"></a>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <h2>Album foto</h2>
+        </div>
+    </div>
+
+    @if (pictures) {
+        <ngb-carousel>
+            @for (picture of pictures; track $index) {
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img [src]="picture.url"/>
+                    </div>
+                </ng-template>
+            }
+        </ngb-carousel>
+    }
+</div>
+  

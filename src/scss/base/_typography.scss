@@ -1,0 +1,87 @@
+$brandon-thin-path: '/assets/fonts/brandon/Brandon_thin.otf';
+$brandon-thin-it-path: '/assets/fonts/brandon/Brandon_thin_it.otf';
+$brandon-light-path: '/assets/fonts/brandon/Brandon_light.otf';
+$brandon-light-it-path: '/assets/fonts/brandon/Brandon_light_it.otf';
+$brandon-regular-path: '/assets/fonts/brandon/BrandonText-Regular.otf';
+$brandon-regular-it-path: '/assets/fonts/brandon/Brandon_reg_it.otf';
+$brandon-medium-path: '/assets/fonts/brandon/Brandon_med.otf';
+$brandon-medium-it-path: '/assets/fonts/brandon/Brandon_med_it.otf';
+$brandon-bold-path: '/assets/fonts/brandon/Brandon_bld.otf';
+$brandon-bold-it-path: '/assets/fonts/brandon/Brandon_bld_it.otf';
+$brandon-black-path: '/assets/fonts/brandon/Brandon_blk.otf';
+$brandon-black-it-path: '/assets/fonts/brandon/Brandon_blk_it.otf';
+$brandon-font-family: 'brandon-grotesque';
+
+@font-face {
+    font-family: $brandon-font-family;
+    font-style: normal;
+    font-weight: 100;
+    src: url($brandon-thin-path) format('opentype');
+}
+@font-face {
+    font-family: $brandon-font-family;
+    font-style: italic;
+    font-weight: 100;
+    src: url($brandon-thin-it-path) format('opentype');
+}
+@font-face {
+    font-family: $brandon-font-family;
+    font-style: normal;
+    font-weight: 300;
+    src: url($brandon-light-path) format('opentype');
+}
+@font-face {
+    font-family: $brandon-font-family;
+    font-style: italic;
+    font-weight: 300;
+    src: url($brandon-light-it-path) format('opentype');
+}
+@font-face {
+    font-family: $brandon-font-family;
+    font-style: normal;
+    font-weight: 400;
+    src: url($brandon-regular-path) format('opentype');
+}
+@font-face {
+    font-family: $brandon-font-family;
+    font-style: italic;
+    font-weight: 400;
+    src: url($brandon-regular-it-path) format('opentype');
+}
+@font-face {
+    font-family: $brandon-font-family;
+    font-style: normal;
+    font-weight: 500;
+    src: url($brandon-medium-path) format('opentype');
+}
+@font-face {
+    font-family: $brandon-font-family;
+    font-style: italic;
+    font-weight: 500;
+    src: url($brandon-medium-it-path) format('opentype');
+}
+@font-face {
+    font-family: $brandon-font-family;
+    font-style: normal;
+    font-weight: 700;
+    src: url($brandon-bold-path) format('opentype');
+}
+@font-face {
+    font-family: $brandon-font-family;
+    font-style: italic;
+    font-weight: 700;
+    src: url($brandon-bold-it-path) format('opentype');
+}
+@font-face {
+    font-family: $brandon-font-family;
+    font-style: normal;
+    font-weight: 900;
+    src: url($brandon-black-path) format('opentype');
+}
+@font-face {
+    font-family: $brandon-font-family;
+    font-style: italic;
+    font-weight: 900;
+    src: url($brandon-black-it-path) format('opentype');
+}
+  

@@ -1,0 +1,66 @@
+<main role="main">
+    <a class="d-block pb-5 mb-2" name="home"></a>
+  
+    <section>
+      <!-- <ngb-carousel class="shadow-sm" #carousel interval="5000" pauseOnHover="true">
+        <ng-template ngbSlide *ngFor="let picture of pictures">
+          <a [routerLink]="['/gallery', picture.id]" rel="nofollow noopener noreferrer">
+            <div class="picture-container" [ngStyle]="{ 'background-image': 'url(' + picture.url + ')' }"></div>
+          </a>
+        </ng-template>
+      </ngb-carousel> -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="mt-5 mb-4 display-4 fw-normal">Magic Forest</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="container">
+      <div class="row">
+        <div class="col">
+          <h5 class="mb-3">
+            Un spațiu pentru evenimente private în Cluj-Napoca.
+          </h5>
+        </div>
+      </div>
+      <div class="row">
+        <article class="col-lg-6">
+          <p>
+            Activitatea noastră principală este organizarea de evenimente private.
+          </p>
+          <p>
+            Avem 2 etaje închiriabile separat, la etajul 2 și 3 al clădirii, cu săli separate pe grupe de vârstă, având
+            structuri de joacă cu trasee specifice spațiilor de joacă. De la un eveniment adevărat nu puteau să lipsească
+            mașina de făcut baloane de săpun, face-paintingul, laser-tagul pentru copii și jucăriile pentru toate
+            gusturile.
+          </p>
+        </article>
+        <article class="col-lg-6">
+          <p>
+            Pentru adulți există un lounge generos, cu o masă de biliard, o bibliotecă și multe canapele. Spațiul este
+            dotat cu încălzire în pardoseală, aer condiționat și un sistem audio pentru o ambianță cât mai plăcută.
+          </p>
+          <p>
+            Fiecare etaj al spațiului măsoară 300mp, este situat în Someșeni, Cluj-Napoca. Locația dispune de locuri
+            de parcare.
+          </p>
+        </article>
+      </div>
+    </section>
+  
+    <section class="container pb-3 mt-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 text-center">
+          <button class="btn btn-outline-secondary mb-3" routerLink="/rules" fragment="covid-19-measures">
+            Măsuri anti COVID-19
+          </button>
+        </div>
+      </div>
+    </section>
+    <app-price-list class="d-block bg-primary bg-opacity-25 pb-5"></app-price-list>
+    <app-contact class="d-block pb-4"></app-contact>
+  </main>
+  

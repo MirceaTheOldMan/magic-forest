@@ -1,0 +1,15 @@
+.logo-wrapper {
+    position: relative;
+    height: 30px;
+    width: 225px;
+    img {
+        position: absolute;
+        left: 0;
+        top: -12px;
+        z-index: 1;
+    }
+}
+
+.bi-facebook {
+    color: #316FF6;
+}
