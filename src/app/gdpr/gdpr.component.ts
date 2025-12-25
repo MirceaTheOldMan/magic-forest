@@ -14,6 +14,8 @@ const ALERTS: Alert[] = [
   },
 ];
 
+const GDPR_ACCEPTED_KEY = 'gdpr-accepted';
+
 @Component({
   selector: 'app-gdpr',
   standalone: true,
@@ -22,17 +24,21 @@ const ALERTS: Alert[] = [
   styleUrl: './gdpr.component.scss'
 })
 export class GdprComponent {
-  alerts!: Alert[];
+  alerts: Alert[] = [];
 
   constructor() {
-    this.reset();
+    const gdprAccepted = localStorage.getItem(GDPR_ACCEPTED_KEY);
+    if (!gdprAccepted) {
+      this.reset();
+    }
   }
 
-  close(alert: Alert) {
+  close(alert: Alert): void {
     this.alerts.splice(this.alerts.indexOf(alert), 1);
+    localStorage.setItem(GDPR_ACCEPTED_KEY, 'true');
   }
 
-  reset() {
+  reset(): void {
     this.alerts = Array.from(ALERTS);
   }
 
